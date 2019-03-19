@@ -1,0 +1,505 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', cursive, serif;
+}
+
+/*GENERAL*/
+
+.link-back
+{
+    font-size: 0.8em;
+    margin-top: 90px;
+}
+
+.nav .nav-main li
+{
+   list-style: none;
+}
+
+/*END-GENERAL*/
+
+/*HEADER*/ 
+
+.header
+{
+    height: 160px;
+}
+
+.header > p
+{
+    font-size: 0.6em;
+    color: grey;
+    opacity: 0.8;
+    width: 25%;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.header .header-main
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .header-content, .header-logo
+{
+    line-height: 0.1;
+    color: #162f57;
+}
+
+.header .header-content::after
+{
+    content: '';
+    display: block;
+    background-image: url('/img/logo-moving-guy-v2-01.jpg');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 60px;
+    right: 60px;
+}
+
+.header .header-content > p
+{
+    text-transform: uppercase;
+    font-size: 0.5em;
+    color: #162f57;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+}
+
+.header .header-logo > p
+{
+    font-size: 1em;
+    color: #162f57;
+}
+
+.header .header-logo span
+{
+    font-size: 1em;
+    color: #000;
+}
+
+.header .header-email
+{
+    margin-left: 80px;
+    width: 180px;
+    padding: 20px;
+    background-color: #000;
+}
+
+.header .header-email a
+{ 
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header .header-email:hover
+{
+    background-color: #162f57;
+}
+
+/*END - HEADER*/ 
+
+/*NAV*/
+
+.nav .nav-main 
+{
+    background-color: #162f57;
+}
+
+.nav .nav-main ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.nav .nav-main i
+{
+    color: #FFF;
+    background-color: #80ccde;
+    height: 50px;;
+    width: 50px;
+    position: relative;
+    top: 52px;
+    right: 60%;
+    text-align: right;
+    padding: 10px;
+    z-index: 91;
+    margin: 70% 20% 0 70%;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+}
+
+.nav .nav-main-a
+{
+   bottom: 0;
+}
+
+.nav .nav-main-a a:hover
+{
+    color: #80ccde;  
+    transition: all 1s ease-in-out;
+}
+
+.nav .nav-main li a
+{
+    text-decoration: none;
+    color: #FFF;
+    width: 315px;
+    margin: 10px 50px;
+}
+
+/*END - NAV*/ 
+
+/*BANNIERE*/
+
+.banniere 
+{
+    height: 1080px;
+    width: 100%;
+    background-image: url('../img/moving_tips_tempe_movers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.banniere .banniere-content-titre
+{
+    align-self: center;
+    color: #FFF;
+    font-size: 1.6em;
+    text-shadow: 3px 3px 3px #162f57;
+}
+
+.banniere .banniere-items
+{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    padding: 91px 0;
+    background-color: #162f57;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.banniere-content
+{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.banniere .banniere-items .banniere-h3
+{
+    color: #FFF;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.banniere .banniere-items .banniere-expertise::before,
+.banniere .banniere-items .banniere-reactivite::before,
+.banniere .banniere-items .banniere-travail::before
+{
+    content: '';
+    display: block;
+    background-size: 50px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 70px;
+    bottom: 20px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.banniere .banniere-items .banniere-expertise::before
+{
+    background-image: url('../img/52394-moving-home-transport-for-boxes.png');
+}
+
+.banniere .banniere-items .banniere-reactivite::before
+{
+    background-image: url('../img/Lifting\ boxeiStock_000017017141XSmall.jpg');
+}
+
+.banniere .banniere-items .banniere-travail::before
+{
+    background-image: url('../img/home-img.png');
+}
+
+.banniere .banniere-items .banniere-paragraphe
+{
+    color: #FFF;
+    font-size: 0.8em;
+    color: grey;
+}
+
+/*END-BANNIERE*/
+
+/*SECTION*/
+
+.section
+{
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.section .section-main div h3
+{
+    font-size: 1.6em;
+    width: 80%;
+}
+
+.section .section-main div > p
+{
+    font-size: 1em;
+    width: 95%;
+    color: grey;
+}
+
+.section .section-main img
+{
+    float: left;
+    margin: 10px;
+}
+
+.section .section-main h4,
+.section .section-link #section-color-para
+{
+    color: #162f57;
+}
+
+.section .section-link span i
+{
+    margin-right: 5px;
+}
+
+.section .section-link 
+{
+    font-size: 0.8em;
+    background-color: #DDD;
+    border: 1px solid #CCC;
+}
+
+/*ASIDE*/
+
+.aside{
+    background-color: grey;
+    margin-top: 50px;
+    height: 290px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.aside h3, .aside a{
+    color: #FFF;
+}
+
+.aside a{
+    border: 1px solid #80ccde;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #80ccde;
+}
+
+.aside a:hover{
+    border: 1px solid #FFF;
+    color: #80ccde;
+    background-color: #FFF;
+    transition: all 1s ease-in-out;
+}
+
+/*END-SECTION*/
+
+/*FOOTER*/
+
+.footer
+{
+    background-color: #757575;
+    color: #DDD;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    padding: 20px;
+}
+
+/*END-FOOTER*/
+
+/*FORM*/
+
+.formulaire
+{
+    background-color: #162f57;
+    color: #FFF; 
+    font-family: cursive, serif;
+    border: 1px solid #757575;
+    border-radius: 5px;
+}
+
+.formulaire p
+{
+    margin-left: 5px; 
+}
+
+.formulaire label
+{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0 15px 40px;
+    color: #FFF;
+}
+
+.formulaire input, textarea
+{
+    width: 300px;
+    height: 20px;
+}
+
+.formulaire textarea
+{
+    height: 200px;
+}
+
+.formulaire input[type='submit']
+{
+ 
+    margin: 0 248px 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #80ccde;
+    background-color: #FFF;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.formulaire input[type='submit']:hover
+{
+    color: #FFF;
+    background-color: #80ccde;
+    transition: all 1s ease-in-out;
+}
+
+/*END-FORM*/
+
+/*RESPONSIVE*/
+
+@media all and (max-width: 1659px){
+    .nav 
+    {
+        margin-top: 50px;
+    }
+
+    .nav .nav-main ul 
+    {
+        width: 50%;
+        height: 450px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav .nav-main li 
+    {
+        padding: 10px 0 30px;
+    }
+
+        .nav .nav-main i
+    {
+        position: relative;
+        top: -20px;
+        text-align: center;
+    }
+
+        .section
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
+
+@media all and (max-width: 900px){
+    
+    .header
+    {
+        height: 350px;
+    }
+
+    .header .header-main
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav .nav-main ul 
+    {
+        width: 80%;
+        align-items: center;
+    }
+
+    .banniere .banniere-content-titre
+    {
+        color: #162f57;
+        font-size: 1em;
+    }
+   
+}
+
+@media all and (max-width: 600px){
+
+    .nav .nav-main ul 
+    {
+        height: 900px;
+    }
+    
+    .nav .nav-main #nav-main-professionnel a,
+    .nav .nav-main #nav-main-particuler a
+    {
+        display: inline-block;
+        width: 73%;
+        position: relative;
+        left: 40px;
+    }
+
+    .banniere 
+    {
+        display: none;
+    }
+
+    .image-exemple
+    {
+        width: 100%;
+    }
+
+    .formulaire input[type='submit']
+    {
+        margin: 10px 0 ;
+        padding: 10px;   
+    }
+   
+}
+
+/*END - RESPONSIVE*/
